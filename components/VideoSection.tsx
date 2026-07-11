@@ -5,13 +5,24 @@ export function VideoSection() {
         <p className="eyebrow">Demo</p>
         <h2>Watch the local PDF-to-package workflow.</h2>
         <p>
-          The requested demo video file was not present at build time. This placeholder marks where
-          the approved video should be embedded when it is available.
+          See RelayWorks process a PDF locally and generate structured,
+          AI-ready output files.
         </p>
       </div>
-      <div className="video-placeholder" role="img" aria-label="Demo video placeholder">
-        <span>Demo video placeholder</span>
-        <p>Place `RelayWorks_Demo_v1.mp4` in `public/video/` to replace this placeholder.</p>
+
+      <div className="video-frame">
+        <video
+          controls
+          preload="metadata"
+          playsInline
+          aria-label="RelayWorks AI Document Processing Kit demonstration"
+        >
+          <source
+            src="/video/RelayWorks_Demo_v1.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support HTML video.
+        </video>
       </div>
     </section>
   );
