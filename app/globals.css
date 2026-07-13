@@ -184,6 +184,26 @@ p {
   margin-top: 30px;
 }
 
+.offer-summary,
+.offer-details {
+  display: grid;
+  gap: 8px;
+  margin-top: 18px;
+  max-width: 760px;
+}
+
+.hero .offer-summary p,
+.final-cta .offer-details p {
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.hero .offer-price,
+.final-cta .offer-price {
+  color: var(--ink);
+  font-weight: 850;
+}
+
 .feature-strip {
   display: flex;
   flex-wrap: wrap;
@@ -437,6 +457,14 @@ p {
   font-size: 18px;
   line-height: 1.65;
   max-width: 760px;
+}
+
+.final-cta .offer-price {
+  color: #fff;
+}
+
+.final-cta .offer-note {
+  color: #bfe1da;
 }
 
 .legal-page {

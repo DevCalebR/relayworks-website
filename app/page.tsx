@@ -28,6 +28,13 @@ export default function Home() {
                 Watch Demo
               </Link>
             </div>
+            <div className="offer-summary">
+              <p className="offer-price">Launch price: $79 — one-time payment</p>
+              <p>
+                Includes the complete FastAPI + Next.js source-code project, documentation, local
+                processing workflow, structured output exports, and downloadable package generation.
+              </p>
+            </div>
             <div className="feature-strip" aria-label="Product highlights">
               <span>Source code</span>
               <span>Local processing</span>
@@ -113,6 +120,21 @@ export default function Home() {
             Use RelayWorks when you want the application foundation, local processing workflow, and
             AI-ready output package without turning document ingestion into a separate project.
           </p>
+          <div className="offer-details">
+            <p className="offer-price">Launch price: $79 — one-time payment</p>
+            <p>
+              Includes the complete FastAPI + Next.js source-code project, documentation, local
+              processing workflow, structured output exports, and downloadable package generation.
+            </p>
+            <p className="offer-note">
+              Recommended for developers using macOS or Linux with Python 3.11, Node.js 20 or 22,
+              npm, and Marker installed separately.
+            </p>
+            <p className="offer-note">
+              Documents are processed on your own machine or self-hosted infrastructure rather than
+              requiring upload to a third-party document-processing service.
+            </p>
+          </div>
           <div className="cta-row">
             <BuyLink>Buy Now</BuyLink>
             <Link className="button secondary" href="/document-processing-kit/">
