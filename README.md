@@ -26,9 +26,13 @@ Technical portfolios often list tools without showing how those tools solve busi
 
 ## Screenshots
 
-The repository contains verified product screenshots under [`public/images/product`](public/images/product). A refreshed portfolio-homepage capture is intentionally not committed yet; see [`docs/SCREENSHOTS.md`](docs/SCREENSHOTS.md) for the capture brief.
+These captures were taken from the live portfolio at desktop and mobile widths. Verified product-workflow captures remain under [`public/images/product`](public/images/product).
 
-![RelayWorks document processing output](public/images/product/05-conversion-complete.png)
+| Portfolio home | Selected work |
+| --- | --- |
+| ![RelayWorks portfolio homepage](public/images/portfolio/portfolio-home-desktop.png) | ![RelayWorks selected work](public/images/portfolio/selected-work-desktop.png) |
+
+[View the mobile homepage capture](public/images/portfolio/portfolio-home-mobile.png) or review the reproducible capture details in [`docs/SCREENSHOTS.md`](docs/SCREENSHOTS.md).
 
 ## Architecture
 
