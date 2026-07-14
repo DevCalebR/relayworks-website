@@ -1,146 +1,111 @@
 import Link from "next/link";
-import { BuyLink } from "@/components/BuyLink";
 import { ScreenshotFrame } from "@/components/ScreenshotFrame";
-import { VideoSection } from "@/components/VideoSection";
 
-const benefits = [
-  ["Save Development Time", "Stop wiring together multiple open-source tools."],
-  ["Runs Completely Locally", "Keep sensitive documents on your own infrastructure."],
-  ["AI-Ready Outputs", "Generate Markdown, HTML, JSON, text, extracted images, reports, and packages."],
-  ["Source Code Included", "Customize and extend the application."],
+const services = [
+  ["AI and workflow automation", "Turn repetitive document, content, and operations work into reviewable software workflows."],
+  ["APIs and integrations", "Connect business systems with FastAPI services, webhooks, third-party APIs, and reliable delivery logic."],
+  ["Full-stack internal tools", "Build focused Next.js dashboards and operational tools around the work your team already performs."],
+];
+
+const projects = [
+  {
+    title: "CallbackCloser",
+    label: "Communications automation",
+    description: "A missed-call recovery workflow that captures a lead, starts an SMS conversation, qualifies intent, and gives an operator a reviewable dashboard.",
+    href: "https://github.com/DevCalebR/callbackcloser",
+  },
+  {
+    title: "AI Content Automation",
+    label: "Content operations",
+    description: "A production-minded workflow for drafting content with AI, reviewing the result, and delivering approved documents to Google Docs.",
+    href: "https://github.com/DevCalebR/ai-content-automation-app-google-docs-delivery",
+  },
+  {
+    title: "Webhook Dashboard & Alerts",
+    label: "API operations",
+    description: "A webhook ingestion and monitoring application with signature verification, searchable events, retries, and alerting workflows.",
+    href: "https://github.com/DevCalebR/webhook-dashboard-alerts",
+  },
 ];
 
 export default function Home() {
   return (
     <main>
-      <section className="hero">
-        <div className="hero-grid">
-          <div>
-            <p className="eyebrow">RelayWorks</p>
-            <h1>Prepare Documents for AI in Minutes, Not Days.</h1>
+      <section className="studio-hero">
+        <div className="studio-hero-inner">
+          <div className="studio-hero-copy">
+            <p className="eyebrow light">Automation engineering for growing teams</p>
+            <h1>Software that removes operational drag.</h1>
             <p>
-              A self-hosted FastAPI + Next.js application for transforming PDFs into AI-ready
-              Markdown, HTML, JSON, text, extracted images, processing reports, and downloadable packages.
+              RelayWorks designs AI automations, API integrations, document workflows, and
+              focused internal tools for businesses that have outgrown manual work.
             </p>
             <div className="cta-row">
-              <BuyLink>Buy Now</BuyLink>
-              <Link className="button secondary" href="#demo">
-                Watch Demo
-              </Link>
-            </div>
-            <div className="offer-summary">
-              <p className="offer-price">Launch price: $79 — one-time payment</p>
-              <p>
-                Includes the complete FastAPI + Next.js source-code project, documentation, local
-                processing workflow, structured output exports, and downloadable package generation.
-              </p>
-            </div>
-            <div className="feature-strip" aria-label="Product highlights">
-              <span>Source code</span>
-              <span>Local processing</span>
-              <span>AI-ready outputs</span>
+              <Link className="button studio-primary" href="/contact/">Discuss a project</Link>
+              <Link className="button studio-secondary" href="/work/">Review selected work</Link>
             </div>
           </div>
-          <ScreenshotFrame
-            src="/images/product/01-homepage.png"
-            alt="RelayWorks AI Document Processing Kit homepage"
-            title="RelayWorks AI Document Processing Kit"
-            caption="A local PDF processing workflow with reviewable outputs and downloadable packages."
-            priority
-          />
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="featured-product">
-          <div>
-            <p className="eyebrow">Featured Product</p>
-            <h2>RelayWorks AI Document Processing Kit</h2>
-            <p>
-              A source-code product for developers who need a practical PDF ingestion foundation
-              without assembling the backend, frontend, background jobs, and output packaging from scratch.
-            </p>
-          </div>
-          <div className="card-grid">
-            <article className="mini-card">
-              <h3>Source code</h3>
-              <p>FastAPI backend and Next.js frontend included.</p>
-            </article>
-            <article className="mini-card">
-              <h3>Local processing</h3>
-              <p>Run the workflow on your own machine or self-hosted infrastructure.</p>
-            </article>
-            <article className="mini-card">
-              <h3>AI-ready outputs</h3>
-              <p>Generate files that are easier to inspect, package, and feed into AI workflows.</p>
-            </article>
-            <article className="mini-card">
-              <h3>PDF-focused</h3>
-              <p>Built around existing PDF upload and conversion workflows.</p>
-            </article>
+          <div className="proof-panel" aria-label="RelayWorks capabilities">
+            <p className="proof-label">What the portfolio demonstrates</p>
+            <div><span>01</span><strong>Python and FastAPI backends</strong></div>
+            <div><span>02</span><strong>Next.js applications and dashboards</strong></div>
+            <div><span>03</span><strong>AI, webhooks, SMS, and document systems</strong></div>
           </div>
         </div>
       </section>
 
-      <section className="section" id="features">
+      <section className="section studio-section" id="services">
         <div className="section-heading">
-          <h2>Built for developers shipping document-heavy AI tools.</h2>
-          <p>RelayWorks gives you the working application layer around local PDF conversion.</p>
+          <div><p className="eyebrow">Services</p><h2>Practical engineering for real business workflows.</h2></div>
+          <p>Engagements are scoped around a measurable operational problem: reduce manual handling, connect disconnected systems, or make important work easier to monitor.</p>
         </div>
-        <div className="card-grid">
-          {benefits.map(([title, description]) => (
-            <article className="card" key={title}>
-              <h3>{title}</h3>
-              <p>{description}</p>
+        <div className="service-list">
+          {services.map(([title, description], index) => (
+            <article key={title}>
+              <span>0{index + 1}</span><h3>{title}</h3><p>{description}</p>
             </article>
           ))}
         </div>
       </section>
 
-      <section className="section" id="screenshots">
+      <section className="section studio-section" id="work">
         <div className="section-heading">
-          <h2>Screenshot preview</h2>
-          <p>Actual product screens from the current RelayWorks AI Document Processing Kit.</p>
+          <div><p className="eyebrow">Selected work</p><h2>Evidence, not capability claims.</h2></div>
+          <p>Each project is a working codebase with documented architecture, setup steps, validation commands, and explicit limitations.</p>
         </div>
-        <ScreenshotFrame
-          src="/images/product/05-conversion-complete.png"
-          alt="RelayWorks conversion complete screen"
-          title="Conversion complete"
-          caption="Review metadata, output tabs, and download the generated package."
-        />
+        <div className="work-list">
+          {projects.map((project) => (
+            <article key={project.title}>
+              <p className="project-label">{project.label}</p>
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <Link href={project.href}>Inspect the repository <span aria-hidden="true">↗</span></Link>
+            </article>
+          ))}
+        </div>
       </section>
 
-      <VideoSection />
+      <section className="section studio-section">
+        <div className="product-feature">
+          <div className="product-feature-copy">
+            <p className="eyebrow light">Featured source-code product</p>
+            <h2>RelayWorks AI Document Processing Kit</h2>
+            <p>A self-hosted FastAPI and Next.js application that converts PDFs into reviewable, AI-ready outputs and downloadable packages.</p>
+            <div className="cta-row">
+              <Link className="button studio-primary" href="/document-processing-kit/">Explore the product</Link>
+              <Link className="text-link" href="https://github.com/DevCalebR/relayworks-document-processing-showcase">View technical showcase ↗</Link>
+            </div>
+          </div>
+          <ScreenshotFrame src="/images/product/05-conversion-complete.png" alt="RelayWorks document processing completion screen" title="Reviewable output" caption="An actual product screen showing generated output tabs and package download." />
+        </div>
+      </section>
 
-      <section className="section">
-        <div className="final-cta">
-          <p className="eyebrow">Launch offer</p>
-          <h2>Buy the source-code kit and start from a working local PDF pipeline.</h2>
-          <p>
-            Use RelayWorks when you want the application foundation, local processing workflow, and
-            AI-ready output package without turning document ingestion into a separate project.
-          </p>
-          <div className="offer-details">
-            <p className="offer-price">Launch price: $79 — one-time payment</p>
-            <p>
-              Includes the complete FastAPI + Next.js source-code project, documentation, local
-              processing workflow, structured output exports, and downloadable package generation.
-            </p>
-            <p className="offer-note">
-              Recommended for developers using macOS or Linux with Python 3.11, Node.js 20 or 22,
-              npm, and Marker installed separately.
-            </p>
-            <p className="offer-note">
-              Documents are processed on your own machine or self-hosted infrastructure rather than
-              requiring upload to a third-party document-processing service.
-            </p>
-          </div>
-          <div className="cta-row">
-            <BuyLink>Buy Now</BuyLink>
-            <Link className="button secondary" href="/document-processing-kit/">
-              Product details
-            </Link>
-          </div>
+      <section className="section studio-section">
+        <div className="final-cta studio-cta">
+          <p className="eyebrow light">Work with RelayWorks</p>
+          <h2>Bring the workflow that is costing your team time.</h2>
+          <p>Share the current process, the systems involved, and the outcome you need. You will get a direct engineering assessment—not a generic discovery pitch.</p>
+          <div className="cta-row"><Link className="button studio-primary" href="/contact/">Start the conversation</Link></div>
         </div>
       </section>
     </main>
