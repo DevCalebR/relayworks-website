@@ -1,9 +1,9 @@
-# Screenshot plan
+# Verified screenshot inventory
 
-Do not add mockups that imply unsupported functionality. Capture these views from a successful production build:
+The following real captures were produced from `https://getrelayworks.com` on July 14, 2026:
 
 1. `portfolio-home-desktop.png` — 1440 × 1000, showing the hero and proof panel.
 2. `selected-work-desktop.png` — 1440 × 1000, showing the project index.
 3. `portfolio-home-mobile.png` — 390 × 844, showing the mobile hero and primary action.
 
-Use consistent browser chrome, remove personal browser data, and verify every visible link and claim before committing images. Existing document-product images in `public/images/product/` are real application captures.
+They are stored in `public/images/portfolio/`. No personal browser data or unsupported product state is shown. Existing document-product images in `public/images/product/` are also real application captures.
