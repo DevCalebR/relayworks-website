@@ -1,0 +1,95 @@
+{
+  "name": "Caleb Rogers",
+  "title": "Software Engineer",
+  "location": "Rocky Top, Tennessee (Remote)",
+  "contact": {
+    "portfolio": "https://getrelayworks.com",
+    "github": "https://github.com/DevCalebR",
+    "linkedin": "https://www.linkedin.com/in/caleb-r-rogers"
+  },
+  "summary": "Software engineer building AI applications, workflow automation, API integrations, document-processing systems, native macOS tools, and full-stack web applications. Works across Python, FastAPI, Next.js, React, TypeScript, Swift, and SwiftUI, with experience implementing REST APIs, background processing, authentication, webhooks, and reviewable operational workflows.",
+  "skills": [
+    {
+      "label": "Languages",
+      "value": "Python, Swift, TypeScript, JavaScript, HTML, CSS"
+    },
+    {
+      "label": "Frameworks",
+      "value": "FastAPI, Next.js, React, SwiftUI"
+    },
+    {
+      "label": "Backend and integrations",
+      "value": "REST APIs, background processing, authentication, webhooks, Prisma, PostgreSQL, Twilio, Stripe"
+    },
+    {
+      "label": "AI and workflow",
+      "value": "AI applications, document processing, structured outputs, OpenAI API integration, Google Docs delivery architecture"
+    },
+    {
+      "label": "Tools and platforms",
+      "value": "Git, GitHub, Xcode, Vercel, Cloudflare"
+    }
+  ],
+  "experience": [
+    {
+      "organization": "RelayWorks",
+      "role": "Founder and Software Engineer",
+      "dates": "2026-Present",
+      "bullets": [
+        "Build AI applications, developer tools, workflow automation, and full-stack software, including a commercial source-code product and public engineering case studies.",
+        "Designed and shipped the RelayWorks AI Document Processing Kit, a PDF-first FastAPI and Next.js source-code product with local background processing and reviewable output packaging.",
+        "Publish authentic screenshots, sample outputs, architecture documentation, setup requirements, and explicit limitations so technical work can be evaluated without unsupported claims."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "RelayWorks AI Document Processing Kit",
+      "status": "Commercial source-code product",
+      "stack": "Python, FastAPI, Next.js, React, TypeScript",
+      "description": "Built a self-hosted, PDF-first workflow that invokes a separately installed Marker CLI through local background processing and produces Markdown, HTML, structured JSON, plain text, extracted-image review, processing reports, and ZIP packages. The public repository is an evaluation showcase; it does not expose the commercial source code or claim hosted SaaS capabilities.",
+      "linkLabel": "Product",
+      "url": "https://getrelayworks.com/document-processing-kit/"
+    },
+    {
+      "name": "CallbackCloser",
+      "status": "Repository and local simulator; live deployment unavailable",
+      "stack": "Next.js, React, TypeScript, Prisma, PostgreSQL, Twilio, Clerk, Stripe",
+      "description": "Implemented missed-call detection, persisted SMS qualification, owner notifications, protected lead workflows, provider webhooks, tenant boundaries, and subscription gating. The repository supports local evaluation and an isolated simulator; it makes no customer, conversion, or production-scale claims.",
+      "linkLabel": "Repository",
+      "url": "https://github.com/DevCalebR/callbackcloser"
+    },
+    {
+      "name": "Webhook Dashboard & Alerts",
+      "status": "Repository and local demonstration",
+      "stack": "Next.js, React, TypeScript, Prisma, PostgreSQL, Clerk",
+      "description": "Built an operations dashboard with raw-body HMAC verification, idempotent event persistence, searchable payload details, alert rules, recorded outcomes, and controlled replay. Current alert evaluation is synchronous and request limiting is process-local; the project does not claim production scale or guaranteed delivery.",
+      "linkLabel": "Repository",
+      "url": "https://github.com/DevCalebR/webhook-dashboard-alerts"
+    },
+    {
+      "name": "AI Content Automation with Google Docs Delivery",
+      "status": "Code and architecture case study; live deployment unavailable",
+      "stack": "Next.js, React, TypeScript, Prisma, PostgreSQL, OpenAI API, Google APIs",
+      "description": "Developed a codebase demonstrating structured content briefs, persisted AI-assisted runs, human review, deterministic Markdown, text, DOCX, and PDF exports, and Google Docs delivery architecture. Provider-backed generation and delivery require separate configuration and manual verification and are not presented as verified live outcomes.",
+      "linkLabel": "Case study",
+      "url": "https://github.com/DevCalebR/ai-content-automation-app-google-docs-delivery"
+    },
+    {
+      "name": "Portfolio Dashboard",
+      "status": "Frontend demonstration with synthetic data",
+      "stack": "React, TypeScript, Vite, TanStack Table, React Hook Form, Zod, Recharts",
+      "description": "Built a responsive frontend for browsing synthetic backtest runs, configuring validated mock runs, synchronizing filters with the URL, and reviewing lazy-loaded charts. The project has no live trading system, broker integration, analytics backend, authentication, persistent database, or financial performance claims.",
+      "linkLabel": "Repository",
+      "url": "https://github.com/DevCalebR/portfolio-dashboard"
+    },
+    {
+      "name": "Security Workflow IDE for macOS",
+      "status": "Native macOS project; public repository unavailable",
+      "stack": "Swift, SwiftUI, Xcode, Python and shell execution",
+      "description": "Built a native multi-pane developer workspace with an integrated editor, interactive terminal, plugin toolbox, workflow dashboard, persistent project sessions, runtime arguments and execution metrics, and Markdown report generation.",
+      "linkLabel": "",
+      "url": ""
+    }
+  ]
+}

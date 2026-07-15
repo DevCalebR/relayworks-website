@@ -1,4 +1,5 @@
 import Link from "next/link";
+import resumeData from "@/resume/resume.json";
 
 export function Footer() {
   return (
@@ -18,7 +19,8 @@ export function Footer() {
         <Link href="/document-processing-kit/">Product</Link>
         <Link href="/privacy/">Privacy</Link>
         <Link href="/terms/">Terms</Link>
-        <Link href="https://github.com/DevCalebR">GitHub</Link>
+        <Link href={resumeData.contact.github}>GitHub</Link>
+        <Link href={resumeData.contact.linkedin}>LinkedIn</Link>
       </nav>
     </footer>
   );
