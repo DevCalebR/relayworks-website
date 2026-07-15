@@ -1,6 +1,7 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata = { title: "Services", description: "AI automation, API integration, and custom software services from RelayWorks." };
+export const metadata: Metadata = { title: "Services", description: "AI applications, workflow automation, API integration, document processing, and full-stack software engineering services from Caleb Rogers.", alternates: { canonical: "/services/" } };
 
 const services = [
   ["AI and business workflow automation", "Design reliable, reviewable workflows around document handling, content operations, lead follow-up, and repetitive internal processes.", "Useful when a process depends on copy-and-paste work, repeated decisions, or information moving between systems."],
@@ -10,7 +11,7 @@ const services = [
 ];
 
 export default function ServicesPage() {
-  return <main className="legal-page studio-page">
+  return <main id="main-content" className="legal-page studio-page">
     <header className="page-intro"><p className="eyebrow">Services</p><h1>Engineering scoped around the bottleneck.</h1><p>RelayWorks takes on focused automation and software projects where the business outcome is clear and the implementation needs to be dependable.</p></header>
     <div className="service-detail-list">
       {services.map(([title, description, fit], index) => <article key={title}><span>0{index + 1}</span><div><h2>{title}</h2><p>{description}</p><p className="fit-note">{fit}</p></div></article>)}

@@ -7,29 +7,32 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "RelayWorks — AI Automation & Custom Software",
-    template: "%s | RelayWorks",
+    default: "Caleb Rogers | Software Engineer — AI, Automation & Full-Stack Development",
+    template: "%s | Caleb Rogers",
   },
   description: site.description,
   keywords: site.keywords,
+  alternates: { canonical: "/" },
+  authors: [{ name: "Caleb Rogers", url: site.url }],
+  creator: "Caleb Rogers",
   openGraph: {
-    title: "RelayWorks — AI Automation & Custom Software",
+    title: "Caleb Rogers | Software Engineer — AI, Automation & Full-Stack Development",
     description: site.description,
     url: site.url,
-    siteName: site.name,
+    siteName: "Caleb Rogers — Software Engineer",
     images: [
       {
         url: "/images/product/01-homepage.png",
         width: 1440,
         height: 1100,
-        alt: "RelayWorks document processing product interface",
+        alt: "RelayWorks AI document processing interface built by Caleb Rogers",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "RelayWorks — AI Automation & Custom Software",
+    title: "Caleb Rogers | Software Engineer — AI, Automation & Full-Stack Development",
     description: site.description,
     images: ["/images/product/01-homepage.png"],
   },
@@ -39,6 +42,23 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Caleb Rogers",
+    url: site.url,
+    jobTitle: "Software Engineer",
+    sameAs: ["https://github.com/DevCalebR"],
+    knowsAbout: [
+      "AI applications",
+      "workflow automation",
+      "API integrations",
+      "document processing",
+      "native macOS development",
+      "full-stack web development",
+    ],
+  };
+
   return (
     <html lang="en">
       <head>
@@ -54,9 +74,14 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         />
       </head>
       <body>
+        <a className="skip-link" href="#main-content">Skip to content</a>
         <Header />
         {children}
         <Footer />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </body>
     </html>
   );

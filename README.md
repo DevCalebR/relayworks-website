@@ -1,10 +1,10 @@
 <div align="center">
 
-# RelayWorks
+# Caleb Rogers — Software Engineer
 
-### Software that removes operational drag.
+### Practical software for complex workflows.
 
-**A static Next.js portfolio for an automation engineering practice focused on AI workflows, API integrations, document systems, and internal tools.**
+**A static Next.js engineering portfolio spanning AI applications, workflow automation, API integrations, native macOS software, and full-stack development.**
 
 [View the website](https://getrelayworks.com) · [Review selected work](https://getrelayworks.com/work/) · [Discuss a project](https://getrelayworks.com/contact/)
 
@@ -18,21 +18,17 @@ Technical portfolios often list tools without showing how those tools solve busi
 
 ## Key features
 
-- Outcome-led service positioning for AI automation, integrations, and custom software
-- Selected-work index linked to public, inspectable repositories
+- Recruiter- and client-facing software engineering positioning
+- Selected work across AI, automation, native macOS, APIs, and full-stack applications
 - Dedicated product page for the RelayWorks AI Document Processing Kit
+- About and resume routes with an original downloadable PDF
+- Accessible responsive navigation and reduced-motion support
 - Static export with no server, database, authentication, or runtime secrets
 - Responsive layouts, accessible landmarks, and project-specific metadata
 
-## Screenshots
+## Product media
 
-These captures were taken from the live portfolio at desktop and mobile widths. Verified product-workflow captures remain under [`public/images/product`](public/images/product).
-
-| Portfolio home | Selected work |
-| --- | --- |
-| ![RelayWorks portfolio homepage](public/images/portfolio/portfolio-home-desktop.png) | ![RelayWorks selected work](public/images/portfolio/selected-work-desktop.png) |
-
-[View the mobile homepage capture](public/images/portfolio/portfolio-home-mobile.png) or review the reproducible capture details in [`docs/SCREENSHOTS.md`](docs/SCREENSHOTS.md).
+Verified product-workflow captures remain under [`public/images/product`](public/images/product), and the product demo is stored under [`public/video`](public/video).
 
 ## Architecture
 
@@ -91,6 +87,8 @@ npm run validate
 ```text
 app/                 Routes, metadata, and global styles
   contact/           Client-conversation entry point
+  about/             Software engineer profile
+  resume/            Embedded and downloadable resume
   services/          Service positioning
   work/              Selected portfolio projects
   document-processing-kit/
@@ -102,7 +100,7 @@ docs/                Architecture, screenshots, troubleshooting
 
 ## Design decisions
 
-- The homepage leads with business outcomes; technologies appear as supporting proof.
+- The homepage leads with Caleb Rogers as a software engineer; technologies appear as supporting proof.
 - Selected work links to code instead of presenting unsupported performance claims.
 - The document-processing kit remains a distinct product within the broader studio identity.
 - Static output minimizes hosting cost and removes unnecessary operational risk.

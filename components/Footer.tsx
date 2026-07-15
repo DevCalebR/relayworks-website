@@ -5,15 +5,17 @@ export function Footer() {
     <footer className="footer">
       <div>
         <Link className="brand footer-brand" href="/">
-          <span className="brand-mark">R</span>
-          <span>RelayWorks</span>
+          <span className="brand-mark">CR</span>
+          <span className="brand-name">Caleb Rogers</span>
         </Link>
-        <p>AI automation, API integrations, and custom software for business operations.</p>
+        <p>Software engineering across AI, automation, web, and native macOS.</p>
       </div>
       <nav aria-label="Footer navigation">
-        <Link href="/services/">Services</Link>
         <Link href="/work/">Work</Link>
-        <Link href="/contact/">Contact</Link>
+        <Link href="/services/">Services</Link>
+        <Link href="/about/">About</Link>
+        <Link href="/resume/">Resume</Link>
+        <Link href="/document-processing-kit/">Product</Link>
         <Link href="/privacy/">Privacy</Link>
         <Link href="/terms/">Terms</Link>
         <Link href="https://github.com/DevCalebR">GitHub</Link>

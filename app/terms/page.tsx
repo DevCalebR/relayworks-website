@@ -4,11 +4,12 @@ import { site } from "@/config/site";
 export const metadata: Metadata = {
   title: "Terms",
   description: "Terms information for RelayWorks and RelayWorks AI Document Processing Kit.",
+  alternates: { canonical: "/terms/" },
 };
 
 export default function TermsPage() {
   return (
-    <main className="legal-page">
+    <main id="main-content" className="legal-page">
       <article>
         <div>
           <p className="eyebrow">{site.publisher}</p>

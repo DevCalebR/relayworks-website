@@ -4,11 +4,12 @@ import { site } from "@/config/site";
 export const metadata: Metadata = {
   title: "Privacy",
   description: "Privacy information for RelayWorks and RelayWorks AI Document Processing Kit.",
+  alternates: { canonical: "/privacy/" },
 };
 
 export default function PrivacyPage() {
   return (
-    <main className="legal-page">
+    <main id="main-content" className="legal-page">
       <article>
         <div>
           <p className="eyebrow">{site.publisher}</p>

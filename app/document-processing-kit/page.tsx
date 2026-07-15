@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "RelayWorks AI Document Processing Kit",
   description:
     "A self-hosted FastAPI + Next.js PDF processing kit for AI-ready Markdown, HTML, JSON, text, extracted images, reports, and ZIP packages.",
+  alternates: { canonical: "/document-processing-kit/" },
 };
 
 const outputs = ["Markdown", "HTML", "JSON", "Text", "Images", "Processing Report", "ZIP Package"];
@@ -32,7 +33,7 @@ const faqs = [
 
 export default function ProductPage() {
   return (
-    <main>
+    <main id="main-content">
       <section className="hero product-hero">
         <div>
           <p className="eyebrow">RelayWorks AI Document Processing Kit</p>
