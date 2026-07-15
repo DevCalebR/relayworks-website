@@ -110,12 +110,10 @@ docs/                Architecture, screenshots, troubleshooting
 ## Known limitations
 
 - Contact currently routes through the public GitHub profile; there is no contact form or CRM integration.
-- Portfolio-homepage screenshots still need to be captured after production deployment.
 - Analytics uses Microsoft Clarity and should be reviewed against the deployed privacy policy.
 
 ## Roadmap
 
-- Capture desktop and mobile portfolio screenshots after deployment
 - Add concise case-study pages only when outcome evidence is available
 - Add a branded social-preview image for the studio homepage
 

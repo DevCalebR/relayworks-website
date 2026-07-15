@@ -76,7 +76,7 @@ export default function ProductPage() {
           {[
             ["Local processing", "Keep sensitive PDFs on infrastructure you control."],
             ["Complete workflow", "Upload, process, inspect outputs, and download packages in one app."],
-            ["Production-ready foundation", "Start from FastAPI, Next.js, background jobs, and bounded local uploads."],
+            ["Implementation foundation", "Start from FastAPI, Next.js, background jobs, and bounded local uploads."],
             ["Source code ownership", "Modify the implementation instead of relying on a black-box hosted tool."],
           ].map(([title, description]) => (
             <article className="card" key={title}>
